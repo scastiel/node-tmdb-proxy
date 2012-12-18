@@ -1,0 +1,3 @@
+#!/bin/sh
+dir=$(readlink -f $(dirname $0)/..)
+forever start -a -l $dir/log/server.log -o $dir/log/out.log -e $dir/log/err.log $dir/bin/server.js

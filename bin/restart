@@ -1,0 +1,3 @@
+#!/bin/sh
+dir=$(readlink -f $(dirname $0)/..)
+forever restart $dir/bin/server.js

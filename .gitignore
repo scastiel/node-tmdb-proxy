@@ -1,0 +1,5 @@
+node_modules
+log/err.log
+log/out.log
+log/server.log
+db/tmdb-cache.db
