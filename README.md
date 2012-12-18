@@ -45,11 +45,15 @@ the hostname and the port.
 
 For example, instead of using:
 
-```http://api.themoviedb.org/3/movie/628?api_key={YOUR_API_KEY}```
+```
+http://api.themoviedb.org/3/movie/628?api_key={YOUR_API_KEY}
+```
 
 Use:
 
-```http://localhost:6789/movie/628?api_key={YOUR_API_KEY}```
+```
+http://localhost:6789/movie/628?api_key={YOUR_API_KEY}
+```
 
 The result should (and must) be exactly the same.
 
