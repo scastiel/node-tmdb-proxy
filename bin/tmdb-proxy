@@ -1,0 +1,9 @@
+#!/bin/sh
+dir=$(readlink -f $(dirname $0)/..)
+
+case $1 in
+      start ) forever start -a -l $dir/log/server.log -o $dir/log/out.log -e $dir/log/err.log $dir/bin/server.js ;;
+      stop ) forever stop $dir/bin/server.js ;;
+      restart ) forever restart $dir/bin/server.js ;;
+      * ) echo "Usage:" $(basename $0) "{start|stop|restart}" ;;
+esac
