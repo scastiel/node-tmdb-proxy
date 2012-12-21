@@ -18,6 +18,12 @@ Then, once you *cd* into the *node_tmdb_proxy* directory, install necessary Node
 npm install
 ```
 
+Also globally install the *forever* Node.JS module :
+
+```
+sudo npm install -g forever
+```
+
 One last thing, create the initial cache SQLite DB:
 
 ```
